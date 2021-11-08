@@ -19,4 +19,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('water-bill',[WaterBillControllerAPI::class,'index']);
+Route::post('login',[WaterBillControllerAPI::class,'login']);
+Route::post('register',[WaterBillControllerAPI::class,'register']);
+Route::post('reset-password',[WaterBillControllerAPI::class,'reset-password']);

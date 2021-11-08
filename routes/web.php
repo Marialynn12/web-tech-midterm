@@ -32,3 +32,5 @@ Route::get('/home', [
 Route::resource('waterBills', App\Http\Controllers\WaterBillController::class);
 
 Route::resource('waterBills', App\Http\Controllers\WaterBillController::class);
+
+Route::resource('logs', App\Http\Controllers\LogsController::class);
